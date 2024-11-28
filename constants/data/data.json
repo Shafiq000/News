@@ -1,0 +1,34 @@
+{
+  "news_posts": [
+    {
+      "id": 1,
+      "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/6783/live/7f5fcfe0-abc4-11ef-bdf5-b7cb2fa86e10.jpg",
+      "title": "Imran Khan supporters tear gassed as they close in on central Islamabad",
+      "content": "As tensions rise in the capital, Pakistan's authorities have deployed the army under Article 245 of the Constitution, Islamabad official Irfan Memon confirmed to BBC Urdu."
+    },
+    {
+      "id": 2,
+      "image": "https://ichef.bbci.co.uk/news/800/cpsprodpb/2c2c/live/a0ea3800-a802-11ef-b21e-5359bd56d02f.png.webp",
+      "title": "Russian deserter reveals war secrets of guarding nuclear base",
+      "content": "On the day of Russia’s full-scale invasion of Ukraine in February 2022, Anton says the nuclear weapons base he was serving at was put on full combat alert, Before that, we had only exercises. But on the day the war started, the weapons were fully in place,” says the former officer in the Russian nuclear forces. “We were ready to launch the forces into the sea and air and, in theory, carry out a nuclear strike."
+    },
+    {
+      "id": 3,
+      "image": "https://ichef.bbci.co.uk/news/800/cpsprodpb/f23d/live/aefb7760-ab4a-11ef-9323-7924a1e1d563.jpg.webp",
+      "title": "Sixteen missing after Red Sea tourist boat sinks",
+      "content": "The Sea Story left port near Marsa Alam on Sunday for a five-day diving trip, according to officials, Red Sea Governor Maj-Gen Amr Hanafi said the survivors were found in the Wadi el-Gemal area, south of Marsa Alam, and that they were receiving the necessary medical care."
+    },
+    {
+      "id": 4,
+      "image": "https://ichef.bbci.co.uk/news/800/cpsprodpb/8260/live/331a3070-ab5c-11ef-861a-81f2e161564b.jpg.webp",
+      "title": "Judge dismisses special counsel's election case against Trump",
+      "content": "Jack Smith, the special prosecutor who brought the criminal case against Trump, had asked to have the charges dropped, citing a Justice Department policy that bans the prosecution of a sitting president, Judge Tanya Chutkan dismissed the case without prejudice, meaning the charges could be refiled after Trump finishes his second term."
+    },
+    {
+      "id": 5,
+      "image": "https://ichef.bbci.co.uk/news/800/cpsprodpb/d9c9/live/1104a070-ab1a-11ef-8264-5f9791599833.jpg.webp",
+      "title": "Far-right candidate takes shock lead in Romania presidential election",
+      "content": "A far-right, pro-Russia candidate has taken a surprise lead in the first round of Romania's presidential election, With more than 99% of votes counted, ultranationalist Calin Georgescu was on 23%, followed by centre-right candidate Elena Lasconi of the Save Romania Union and populist social democrat Prime Minister Marcel Ciolacu, the pre-election favourite."
+    }
+  ]
+}

@@ -5,6 +5,10 @@ const Preference = () => {
   return (
     <View>
       <Text>Preference</Text>
+      <Text>Preference</Text>
+      <Text>Preference</Text>
+      <Text>Preference</Text>
+      <Text>Preference</Text>
     </View>
   )
 }

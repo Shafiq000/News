@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable,Share } from 'react-native';
 import React from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Drawer } from 'expo-router/drawer';
@@ -11,6 +11,28 @@ const CustomDrawer = (props) => {
     const pathname = usePathname();
     const router = useRouter();
 
+    const onShare = async () => {
+        try {
+          const result = await Share.share({
+            message: 'Check out this amazing app: https://example.com', // Replace with your app's link
+          });
+          if (result.action === Share.sharedAction) {
+            if (result.activityType) {
+              // Shared with an activity type
+              console.log('Shared with activity type:', result.activityType);
+            } else {
+              // Shared successfully
+              console.log('App shared successfully');
+            }
+          } else if (result.action === Share.dismissedAction) {
+            // Dismissed without sharing
+            console.log('Share dismissed');
+          }
+        } catch (error) {
+          console.error('Error while sharing:', error.message);
+        }
+      };
+
     return (
         <DrawerContentScrollView {...props}>
             <DrawerItem
@@ -20,10 +42,10 @@ const CustomDrawer = (props) => {
                 label={"Sign In"}
                 labelStyle={styles.navItemLabel}
                 style={{
-                    backgroundColor: pathname == "/SignIn" ? "rgba(78, 223, 255,0.4)" : "#fff",
+                    backgroundColor: pathname == "index" ? "rgba(78, 223, 255,0.4)" : "#fff",
                 }}
                 contentContainerStyle={styles.drawerItemContainer}
-                onPress={() => router.push('SignIn')}
+                onPress={() => router.push('../../../auth')}
             />
             <DrawerItem
                 icon={({ color, size, focused }) => (
@@ -47,7 +69,7 @@ const CustomDrawer = (props) => {
                     backgroundColor: pathname == "/MyReference" ? "rgba(78, 223, 255,0.4)" : "#fff",
                 }}
                 contentContainerStyle={styles.drawerItemContainer}
-                onPress={() => router.push('MyReference')}
+                onPress={() => router.push('../../../preference')}
             />
             <DrawerItem
                 icon={({ color, size, focused }) => (
@@ -105,9 +127,7 @@ const CustomDrawer = (props) => {
                 labelStyle={styles.navItemLabel}
                 style={{ backgroundColor: "#fff" }}
                 contentContainerStyle={styles.drawerItemContainer}
-                onPress={() => {
-                    // Implement share logic here
-                }}
+                onPress={() => onShare()}
             />
             <DrawerItem
                 icon={({ color, size, focused }) => (
